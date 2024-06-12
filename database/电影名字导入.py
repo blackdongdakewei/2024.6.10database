@@ -1,7 +1,7 @@
 import pymysql
 
-table_name='喜剧电影'
-movie_name='疯狂动物城'
+table_name=''
+movie_name=''
 date='2016'
 # i=input('如果添加就输入0，否则输入要修改的id\n')
 # i=int(i)
@@ -10,8 +10,8 @@ def lead_movie_name(i,table_name,movie_name,date):
     connection = pymysql.connect(
         host="localhost",
         user="root",
-        database="zmh",
-        password="123456",
+        database="",
+        password="",
     )
     cursur=connection.cursor()
     if i==0:
