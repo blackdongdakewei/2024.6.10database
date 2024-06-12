@@ -1,12 +1,12 @@
 #这个脚本用于从数据库中读取评论然后ai评价，然后保存回数据库
 import pymysql
 
-table_name='寻梦环游记'
+table_name=''
 conn = pymysql.connect(
     host="localhost",
     user="root",
-    password="123456",
-    database="zmh"
+    password="",
+    database=""
 )
 # 创建游标
 cursor = conn.cursor()
@@ -24,7 +24,7 @@ results = cursor.fetchall()
 questions = [row[0] for row in results]
 
 from zhipuai import ZhipuAI
-client = ZhipuAI(api_key="55157a9a90763aaaa6c6582293d2e531.CYZRIiYgypU2ElY9")
+client = ZhipuAI(api_key="")
 responses=[]
 
 def get_response(client,question,i):
