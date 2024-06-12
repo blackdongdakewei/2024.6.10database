@@ -1,15 +1,15 @@
 import pymysql
 
-table = '飞驰人生2'
-column = 'comments'
+table = 'movie_name'
+column = 'column'
 
 def remove_duplicates_and_reorder(table, column):
     # 连接数据库
     connection = pymysql.connect(
         host="localhost",
         user="root",
-        database="zmh",
-        password="123456",
+        database="",
+        password="",
     )
 
     try:
