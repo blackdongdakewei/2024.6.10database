@@ -1,12 +1,12 @@
 import pymysql
 
-table_name='猩球崛起'
+table_name=''
 def collect_in_table(table_name):
     connection = pymysql.connect(
         host="localhost",
         user="root",
-        database="zmh",
-        password="123456",
+        database="",
+        password="",
     )
     cursur=connection.cursor()
     # 执行SQL查询
