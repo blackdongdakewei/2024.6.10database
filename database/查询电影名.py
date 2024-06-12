@@ -1,15 +1,15 @@
 import pymysql
 
-table_name='喜剧电影'
-movie_name='疯狂动物城'
+table_name=''
+movie_name=''
 
 
 def select_in_table(table_name,movie_name):
     connection = pymysql.connect(
         host="localhost",
         user="root",
-        database="zmh",
-        password="123456",
+        database="",
+        password="",
     )
     cursur=connection.cursor()
 
