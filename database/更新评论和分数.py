@@ -7,8 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from selenium.common.exceptions import NoSuchElementException
 
-table_name='猩球崛起'
-url = "https://movie.douban.com/subject/36069854/comments?status=P"
+table_name=''
+url = ""
 def extract_titles(url):
     # 使用Selenium打开Edge浏览器
     driver = webdriver.Edge()
@@ -71,8 +71,8 @@ def extract_titles(url):
 conn = pymysql.connect(
     host="localhost",
     user="root",
-    password="123456",
-    database="zmh"
+    password="",
+    database=""
 )
 
 # 更新评论数据
