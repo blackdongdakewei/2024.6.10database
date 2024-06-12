@@ -7,8 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from selenium.common.exceptions import NoSuchElementException
 
-table_name='寻梦环游记'
-url = "https://movie.douban.com/subject/20495023/comments?status=P"
+table_name=''
+url = ""
 def extract_titles(url):
     # 使用Selenium打开Edge浏览器
     driver = webdriver.Edge()
